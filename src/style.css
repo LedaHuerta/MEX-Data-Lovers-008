@@ -105,87 +105,81 @@
 
 /*Estilos Menu Navegacion*/
 
-.menu,
-.section-nav {
-    list-style: none !important;
-    text-decoration: none;
-    background-color: #0A1616;
-    color: #CD951A;
-    margin: 0;
-    padding: 0;
+header {
+    width: 100%;
+}
+
+nav {
+    margin: 0.1% auto;
+    width: 90%;
+    max-width: 1600px;
+}
+
+nav ul {
     list-style: none;
-    display: flex;
-    align-items: space-between;
-    justify-items: space-around;
-    height: auto;
-    flex-wrap: wrap;
-    text-align: center;
-    text-justify: center;
-    border: none;
 }
 
-.logo-welcome {
-    align-items: center center;
-    justify-content: center center;
-    background-color: transparent !important;
-}
 
-.container-logo {
-    background-color: none !importante;
-}
+/*Especificidad de > con el le decimos que toma a los ul que sean hijos de navr*/
 
-.menu {
-    background-image: url(marco.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-a {
-    list-style: none !important;
-    text-decoration: none;
-    -webkit-appearance: none !important;
-    margin: 10px;
-}
-
-.container-buttons,
-.select-roles,
-.select-ability,
-.buttons-nav {
-    text-decoration-skip-ink: none;
-    -moz-text-decoration-style: none;
+nav>ul {
+    display: table;
+    overflow: hidden;
+    width: 100%;
     background-color: #0A1616;
-    color: #CD951A;
-    border: none;
-    align-items: space-around;
-    text-align: space-around;
-    height: auto;
+    position: relative;
 }
 
-.container-buttons:hover,
-.select-roles:hover,
-.select-ability:hover,
-.buttons-nav:hover {
-    background-color: #213238;
+nav>ul li {
+    display: table-cell;
+    text-align: center;
+}
+
+nav>ul li a {
+    color: #CD951A;
+    display: block;
+    line-height: 60px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav>ul>li>a>span {
+    background-color: #0A1616;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav>ul>li>a>span.icon {
+    display: block;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+nav>ul>li a:hover>span {
+    top: 0;
 }
 
 
 /*Estilos de  footer*/
 
 .copyright {
-    text-align: space-around;
-    text-justify: space-around;
-    display: flex;
-    flex-wrap: wrap;
     color: #CD951A;
-}
-
-.footer-logos {
-    margin: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: space-between;
-    float: left;
 }
 
 
@@ -329,6 +323,9 @@ a {
 
 /* Estilos seccion Champions*/
 
+
+/*1.- estilos del submenu */
+
 .section-champions {
     width: 100%;
     height: 100%;
@@ -338,8 +335,6 @@ a {
     width: 80%;
     height: 80%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
     align-items: space-between;
     justify-items: space-between;
 }
@@ -347,8 +342,6 @@ a {
 .box-cards {
     width: 100%;
     height: 100%;
-    display: inherit;
-    flex-wrap: wrap;
     align-items: space-between;
     justify-items: space-between;
     -webkit-perspective: 1000px;
@@ -365,8 +358,6 @@ a {
     background-color: #0A1616;
     color: #CD951A;
     width: 20%;
-    display: inline-flex;
-    flex-wrap: wrap;
     align-items: space-between;
     justify-items: space-between;
     -webkit-perspective: 1000px;

@@ -6,62 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glance at LoL</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts/icons.css">
 </head>
 
 <body class="body-bg">
     <div class="container blue">
-        <div class="row">
-            <header class="body-header">
-                <nav class="menu">
-                    <div class="col-4">
-                        <ol id="container-b-nav" class="section-nav">
-                            <li id="container-b-welcome" class="container-buttons">
-                                <a href="#" id="button-nav-welcome" class="buttons-nav">Home</a>
-                            </li>
 
-                            <li id="container-b-gamebasics" class="container-buttons">
-                                <a href="#" id="button-nav-gbasics" class="buttons-nav">Game Basics</a>
-                            </li>
+        <header class="body-header">
+            <nav class="menu row">
+                <ul>
+                    <li><a href="#"><span class=""><i class="icon icon-home"></i></span>Home</a></li>
+                    <li><a href="#"><span class=""><i class="icon icon-game-controller"></i></span>Game Basics</a></li>
+                    <li>
+                        <a id="logo-welcome" href="#"> <img src="GLol-Logo.png" alt="Logo Glance at LoL" width="100px" height="30px"></a>
+                    </li>
+                    <li><a href="#"><span class=""><i class="icon icon-trophy"></i></span>Champions</a></li>
+                    <li id="button-nav-filter" class="hide"><a href="#"><span class=""><i class="icon icon-search"></i></span>Filtrar</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                            <li id="container-b-champions" class="container-buttons">
-                                <a href="#" id="button-nav-champions" class="buttons-nav">Champions</a>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="col-4">
-                        <figure id="container-logo" class="section-nav">
-                            <img id="logo-welcome" class="logo-welcome" src="GLol-Logo.png" width="200px" height="50px">
-                        </figure>
-                    </div>
-
-                    <div class="col-4">
-                        <div id="container-b-filters" class="section-nav">
-                            <div id="select-container-roles" class="container-buttons">
-                                <select id="filter-roles" class="select-roles">
-                                        <option value="">Choose Role</option>
-                                        <option value="Assassin">Asesinos</option>
-                                        <option value="Fighter">Luchadores</option>
-                                        <option value="Mage">Magos</option>
-                                        <option value="Marksman">Tiradores</option>
-                                        <option value="Tank">Tanques</option>
-                                        <option value="Support">Soporte</option>
-                                    </select>
-                            </div>
-
-                            <div id="select-container-abilitys" class="container-buttons">
-                                <select id="filter-ability" class="select-ability"> 
-                                        <option value="">Best 10 By Ability</option>
-                                        <option value="armor">AR</option>
-                                        <option value="attackdamage">AD</option>
-                                        <option value="attackspeedoffset">AS</option>
-                                        <option value="movespeed">MS</option>
-                                    </select>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-        </div>
 
         <section id="welcome" class="section-welcome">
             <div class="row">
@@ -198,6 +162,35 @@
             </article>
         </section>
         <section id="champions" class="section-champions hide">
+            <header class="row">
+                <nav>
+                    <ul class="ul-menu">
+                        <li>
+                            <a href="#"> <select id="filter-roles" class="a-hover select-roles">
+                                            <option value="">Choose Role</option>
+                                            <option value="Assassin">Asesinos</option>
+                                            <option value="Fighter">Luchadores</option>
+                                            <option value="Mage">Magos</option>
+                                            <option value="Marksman">Tiradores</option>
+                                            <option value="Tank">Tanques</option>
+                                            <option value="Support">Soporte</option>
+                                    </select></a>
+                        </li>
+                        <li>
+                            <a href="#"><select id="filter-ability" class="a-hover select-ability"> 
+                                            <option value="">Best 10 By Ability</option>
+                                            <option value="armor">AR</option>
+                                            <option value="attackdamage">AD</option>
+                                            <option value="attackspeedoffset">AS</option>
+                                            <option value="movespeed">MS</option>
+                                    </select></a>
+                        </li>
+                        <li>
+                            <a class="a-hover" id="button-alphabetic" href="#">Alphabetic</a>
+                            <li>
+                    </ul>
+                </nav>
+            </header>
 
             <div class="row">
                 <div class="col-12">

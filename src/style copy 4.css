@@ -352,7 +352,6 @@ nav>ul>li a:hover>span {
     flex-wrap: wrap;
     align-items: space-between;
     justify-items: space-between;
-    overflow: auto;
 }
 
 .box-cards {
@@ -370,78 +369,52 @@ nav>ul>li a:hover>span {
 }
 
 .cards-frame {
+    background-image: url(card-frame.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     width: 25%;
     height: 50vh;
-    position: relative;
-    margin: 15px;
 }
 
 .card {
-    background-color: transparent;
+    background-color: #0A1616;
     color: #CD951A;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin: 15px;
-    transform-style: preserve-3d;
-    transition: all 0.5% ease;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    /* -webkit-perspective: 1000px;
+    perspective: 1000px; */
+    position: relative;
+    margin: 10px auto;
 }
 
-.card:hover {
-    transform: rotateY(180deg);
-}
 
-.card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background-color: #03080B;
-    color: #E4B04C;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
+/* .card-front,
 .card-back {
     position: absolute;
     width: 100%;
     height: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: #03080B;
-    color: #E4B04C;
     text-align: center;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: bold;
-    transform: rotateY(180deg);
 }
 
-.card-text {
-    margin: 20px;
-    padding: auto;
+.card-front {
+    transform: rotateX(0deg);
+    z-index: 2;
+    font: 1em/1.8em Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.card-back {
+    transform: rotateX(180deg);
+    background: repeating-linear-gradient( -45deg, #ececec, #ececec 10px, #dedede 10px, #dedede 20px);
+} */
 
 .card-img {
-    width: 70%;
-    height: 30%;
-    margin-top: 5%;
-    display: block;
-}
-
-.champion-img {
-    width: 100%;
-    height: 100%;
-}
-
-.card-alias {
-    margin-top: 80px;
-    display: block;
-}
-
-
-/* .card-img {
     display: block;
     padding: auto;
     margin: 1%;
@@ -465,7 +438,5 @@ nav>ul>li a:hover>span {
     display: block;
     padding: auto;
     margin: 1%;
-    border: 3px solid olive; */
-
-
+    border: 3px solid olive;
 }

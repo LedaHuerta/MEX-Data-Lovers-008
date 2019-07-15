@@ -30,5 +30,21 @@ window.dataManager = {
             }
             return 0;
         });
+    },
+    averageByADamage: (newData) => {
+        let count = 0;
+        let sumDamage = 0;
+        let averageResult = 0;
+        for (let i = 0; i < newData.length; i++) {
+            // Declarar una variable donde guarde el daño de los campiones actuales//
+            let currentChampions = newData[i];
+            //Declaar una variable que guarde el daño del campion actual//
+            let currentAttackdamage = currentChampions.stats.attackdamage;
+            // Declarar variable que acumule la suma de cada daño //
+            sumDamage = sumDamage + currentAttackdamage;
+            count++;
+            averageResult = sumDamage / count;
+        }
+        return averageResult;
     }
 };

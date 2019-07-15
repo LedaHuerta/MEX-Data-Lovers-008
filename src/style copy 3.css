@@ -17,32 +17,106 @@
     background-position: center;
     background-size: cover;
     background-color: transparent;
-    height: 100vh;
 }
 
 
-/*Crear contenedor del sistema*/
+/*Crear sistema de grillas: contenedor del sistema*/
 
 .container {
-    display: block;
+    display: grid;
     width: 100%;
     margin: 0px auto;
     height: 100vh;
+    grid-column: minmax(8.333333333333332%, 100%);
+    grid-template-rows: minmax(10px, auto);
+}
+
+
+/*Crear columnas*/
+
+
+/*estilo general del sistema*/
+
+[class*='col-'] {
+    float: left;
+    min-height: 10px;
+    /* margin: 30px; */
+    padding: 12px;
+    /* display: flex; */
+    background-color: none;
+}
+
+
+/*cada columna mide 8.33%*/
+
+.col-1 {
+    width: 8.333333333333332%;
+}
+
+.col-2 {
+    width: 16.666666666666664%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333333333333%;
+}
+
+.col-5 {
+    width: 41.66666666666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333333333333336%;
+}
+
+.col-8 {
+    width: 66.66666666666666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33333333333334%;
+}
+
+.col-11 {
+    width: 91.66666666666666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+/*Crear filas*/
+
+.row {
+    margin: auto;
+    width: 100%;
+    height: auto;
 }
 
 
 /*Estilos Menu Navegacion*/
 
-.body-header {
+header {
     width: 100%;
-    background-color: #0A1616;
 }
 
 nav {
     margin: 0.1% auto;
     width: 90%;
     max-width: 1600px;
-    background-color: #0A1616;
 }
 
 nav ul {
@@ -108,50 +182,17 @@ nav>ul>li a:hover>span {
 
 /*Estilos de  footer*/
 
-.footer-body {
-    width: 100%;
-    margin-top: 5vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    background-color: #0A1616;
-    display: inline-flex;
-}
-
 .copyright {
     color: #CD951A;
-    text-align: center;
-    display: inline-flex;
-    background-color: #0A1616;
-}
-
-.footer-logos {
-    display: inline-flex;
-    background-color: #0A1616;
-}
-
-.box-white {
-    width: 30vw;
-    background-color: #0A1616;
-}
-
-.logo-f2 {
-    margin-left: 1vw;
 }
 
 
 /*Estilos de  section welcome*/
 
-.section-welcome {
-    margin-left: 3vw;
-    margin-right: 3vw;
-}
-
 .section-welcome-header {
     color: #785C20;
     display: block;
-    margin-top: 3vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin-top: 80px;
 }
 
 .w-header {
@@ -171,11 +212,11 @@ nav>ul>li a:hover>span {
 }
 
 .welcome-img {
-    display: contents;
+    display: block;
     width: 40%;
     height: 200px;
+    margin: 20px;
     align-items: center;
-    margin-top: 5vh;
 }
 
 .info-basic {
@@ -192,7 +233,6 @@ nav>ul>li a:hover>span {
     color: #CD951A;
     border: none;
     height: 15px;
-    font-size: 18px;
 }
 
 
@@ -316,75 +356,31 @@ nav>ul>li a:hover>span {
     height: 100%;
 }
 
-.champions-header {
-    margin-left: 3vw;
-    margin-right: 3vw;
-    background-color: #0A1616;
-}
-
-.sub-menu {
-    width: 100%;
-    background-color: #0A1616;
-}
-
-.select-roles,
-.select-ability {
-    text-decoration: none;
-    background-color: #0A1616;
-    color: #CD951A;
-    border: none;
-    -webkit-appearance: none;
-}
-
-.select-roles:focus,
-.select-ability:focus {
-    outline: none;
-    background-color: #0A1616;
-    color: #CD951A;
-    border-color: #0A1616;
-}
-
 .main-cards {
     width: 80%;
     height: 80%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: space-between;
-    justify-items: space-between;
 }
 
 .box-cards {
     width: 100%;
     height: 100%;
-    display: inherit;
-    flex-wrap: wrap;
-    align-items: space-between;
-    justify-items: space-between;
     -webkit-perspective: 1000px;
     perspective: 1000px;
-    padding: 50px;
-    position: relative;
+    padding: 50px position: relative;
     margin: 10px auto;
 }
 
-.cards-frame {
+.card {
     background-image: url(card-frame.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 25%;
-    height: 50vh;
-}
-
-.card {
     background-color: #0A1616;
     color: #CD951A;
-    display: flex;
-    flex-wrap: wrap;
-    width: 25%;
-    /* -webkit-perspective: 1000px;
-    perspective: 1000px; */
+    width: 20%;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
     position: relative;
     margin: 10px auto;
 }

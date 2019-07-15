@@ -92,23 +92,24 @@ const printDataObject = (data) => {
         if (data.hasOwnProperty(key)) {
             const element = data[key];
             newData.push(element);
-            cards = `<div id="cards-champions" class="card">        
-                        <div id="" class="card"><>
+            cards = `<div id="cards-champions" class="cards-frame">        
+                        <div id="cards" class="card">
 
-                        <div id="card-front" class="card-front">
-                            <div id="card-img" class="card-img"> <p><img src="${element.img}" class="champion-img"></p></div> <br>
-                            <div id="card-alias" class="card-alias"> 
-                                <p>${element.name}</p> <br>
-                                <p>${element.title}</p> <br>
-                            </div> 
-                        </div>
-                        <div id="card-back">
-                            <div id="card-text" class="card-text">
-                                <p>Roles: ${element.tags}</p> <br>
-                                <p>Armadura: ${element.stats.armor}</p> <br>
-                                <p>Daño de Ataque: ${element.stats.attackdamage}</p> <br>
-                                <p>Velocidad de Ataque: ${element.stats.attackspeedoffset}</p> <br>
-                                <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>
+                            <div id="card-front" class="card-front">
+                                <div id="card-img" class="card-img"> <p><img src="${element.img}" class="champion-img"></p></div> <br>
+                                <div id="card-alias" class="card-alias"> 
+                                    <p>${element.name}</p> <br>
+                                    <p>${element.title}</p> <br>
+                                </div> 
+                            </div>
+                            <div id="card-back">
+                                <div id="card-text" class="card-text">
+                                    <p>Roles: ${element.tags}</p> <br>
+                                    <p>Armadura: ${element.stats.armor}</p> <br>
+                                    <p>Daño de Ataque: ${element.stats.attackdamage}</p> <br>
+                                    <p>Velocidad de Ataque: ${element.stats.attackspeedoffset}</p> <br>
+                                    <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>
+                                </div>
                             </div> 
                         </div>                        
                     </div>`;

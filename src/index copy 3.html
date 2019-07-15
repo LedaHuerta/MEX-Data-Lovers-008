@@ -13,8 +13,8 @@
     <div class="container blue">
 
         <header class="body-header">
-            <nav class="menu">
-                <ul>
+            <nav class="menu row">
+                <ul class="col-12">
                     <li><a href="#"><span id="button-nav-welcome" class=""><i class="icon icon-home"></i></span>Home</a></li>
                     <li><a href="#"><span id="button-nav-gbasics" class=""><i class="icon icon-game-controller"></i></span>Game Basics</a></li>
                     <li>
@@ -28,8 +28,11 @@
 
 
         <section id="welcome" class="section-welcome">
-            <div>
-                <header class="section-welcome-header">
+            <div class="wh row">
+                <div class="col-1">
+                </div>
+
+                <header class="col-10 section-welcome-header">
                     <box id="box-modal-button" class="b-m-button">
                         <a href="#" id="modal-help"> <img src="help-icon.png"></a>
                     </box>
@@ -62,24 +65,35 @@
                         <h1>Bienvenid@ a Glance at LoL</h1>
                     </div>
                 </header>
+
+                <div class="col-1"></div>
             </div>
-            <main>
-                <section id="principal-content" class="welcome-content">
-                    <subtitle id="engagement">
-                        <h2>¿Quieres jugar LoL como todo un Pro-Gamer?</h2> <br> <br>
-                        <p>¿Dedicas buena parte de tu tiempo viendo gameplays, disfrutas ver jugar a tus amigos y en el fondo, <br> quieres lanzarte a la jungla, pero no sabes por donde empezar?</p> <br>
-                    </subtitle>
 
-                    <figure class="welcome-img">
-                        <img src="welcome-lol.png">
-                    </figure>
+            <div class="row">
+                <div class="col-1">
 
-                    <section id="info-basic" class="info-basic">
-                        <p>¡Por fin! Una herramienta que te ayude a obtener una mirada rápida al universo LoL, empezando por sus campeones que te ayuda a tomar las mejores decisiones a la hora de jugar.</p> <br>
-                        <button id="button-meet-champions" class="button-meet-c">Conocer a los Campeones</button>
-                    </section>
-                </section>
-            </main>
+                </div>
+                <div class="col-10">
+                    <main>
+                        <section id="principal-content" class="welcome-content">
+                            <subtitle id="engagement">
+                                <h2>¿Quieres jugar LoL como todo un Pro-Gamer?</h2>
+                                <p>¿Dedicas buena parte de tu tiempo viendo gameplays, disfrutas ver jugar a tus amigos y en el fondo, quieres lanzarte a la jungla, pero no sabes por donde empezar?</p>
+                            </subtitle>
+
+                            <figure class="welcome-img">
+                                <img src="welcome-lol.png">
+                            </figure>
+
+                            <div id="info-basic">
+                                <p>¡Por fin! Una herramienta que te ayude a obtener una mirada rápida al universo LoL, empezando por sus campeones que te ayuda a tomar las mejores decisiones a la hora de jugar.</p>
+                                <button id="button-meet-champions" class="button-meet-c">Conocer a los Campeones</button>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+                <div class="col-1"></div>
+            </div>
         </section>
 
         <section id="game-basics" class="hide">
@@ -148,11 +162,11 @@
             </article>
         </section>
         <section id="champions" class="section-champions hide">
-            <header class="champions-header">
-                <nav class="sub-menu">
-                    <ul>
+            <header class="row">
+                <nav>
+                    <ul class="ul-menu">
                         <li>
-                            <a href="#"> <select id="filter-roles" class="select-roles">
+                            <a href="#"> <select id="filter-roles" class="a-hover select-roles">
                                             <option value="">Choose Role</option>
                                             <option value="Assassin">Asesinos</option>
                                             <option value="Fighter">Luchadores</option>
@@ -163,7 +177,7 @@
                                     </select></a>
                         </li>
                         <li>
-                            <a href="#"><select id="filter-ability" class="select-ability"> 
+                            <a href="#"><select id="filter-ability" class="a-hover select-ability"> 
                                             <option value="">Best 10 By Ability</option>
                                             <option value="armor">AR</option>
                                             <option value="attackdamage">AD</option>
@@ -177,27 +191,55 @@
                     </ul>
                 </nav>
             </header>
-            <main id="section-champions" class="main-cards">
-                <div id="box-cards" class="box-cards">
+
+            <div class="row">
+                <div class="col-12">
+                    <main id="section-champions" class="main-cards">
+                        <div id="box-cards" class="box-cards">
+
+                        </div>
+
+                    </main>
                 </div>
-            </main>
+            </div>
         </section>
 
-        <footer class="footer-body">
-            <section class="copyright">
-                <p><i class="icon icon-code"></i> Tania Juarez ★ Leda Huerta <i class="icon icon-code1"> </i> Laboratoria ® ©</p>
-            </section>
-            <div class="box-white">
+        <footer>
+            <div class="row">
+                <div class="col-1">
+
+                </div>
+                <div class="col-4">
+                    <section class="copyright">
+                        <div>
+                            <p>Tania Juarez ★ Leda Huerta ★ Laboratoria ® ©</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-4">
+                    <figure class="footer-logos">
+                        <div>
+                            <img src="laboratoria-logo.png" width="200px" height="50px">
+                        </div>
+                        <div>
+                            <img src="lol-logo.png" width="200px" height="50px">
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-1">
+
+                </div>
             </div>
-            <figure class="footer-logos">
-                <div>
-                    <img src="laboratoria-logo.png" width="150px" height="30px">
-                </div>
-                <div class="logo-f2">
-                    <img src="lol-logo.png" width="150px" height="30px">
-                </div>
-            </figure>
         </footer>
+
+    </div>
+
+
+
+
     </div>
 
 

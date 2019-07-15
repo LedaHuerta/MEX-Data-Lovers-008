@@ -14,6 +14,7 @@ const buttonNavChampions = document.getElementById('button-nav-champions');
 //Variables de select de filtrado//
 const selectRoles = document.getElementById('filter-roles');
 const selectAbility = document.getElementById('filter-ability');
+const selectAlphabeth = document.getElementById('order-alphabeth');
 
 
 //Variables para mostrar secciones//
@@ -139,6 +140,16 @@ let sortAbility = (ev) => {
 
 selectAbility.addEventListener('change', sortAbility);
 
+//Crear función que  reciba el valor seleccionado y ejecute la funcion que ordena la dat alfabeticamente y  la imprima en pantalla/
+let sortAlphabethic = (ev) => {
+    const userOrder = ev.target.value;
+    const sortAlphabeth = window.dataManager.sortByAlphabeth(newData, userOrder);
+    console.log(sortAlphabeth);
+    root.innerHTML = '';
+    printDataObject(sortAlphabeth);
+};
+
+selectAlphabeth.addEventListener('change', sortAlphabethic);
 
 
 // // let filterAbility = (ev) => {

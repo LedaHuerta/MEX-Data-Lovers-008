@@ -18,5 +18,17 @@ window.dataManager = {
             }
             return 0;
         });
+    },
+
+    sortByAlphabeth: (newData, userOrder) => {
+        return newData.sort((a, b) => {
+            if (a.id[userOrder] < b.id[userOrder]) {
+                return 1;
+            }
+            if (a.id[userOrder] > b.id[userOrder]) {
+                return -1;
+            }
+            return 0;
+        });
     }
 };

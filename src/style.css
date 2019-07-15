@@ -426,7 +426,7 @@ nav>ul>li a:hover>span {
 }
 
 .card-img {
-    width: 70%;
+    width: 40%;
     height: 30%;
     margin-top: 5%;
     display: block;
@@ -443,31 +443,52 @@ nav>ul>li a:hover>span {
 }
 
 
-/* .card-img {
-    display: block;
-    padding: auto;
-    margin: 1%;
-    border: 3px solid red;
+/* responsive */
+
+@media screen (max-width:425px) {
+    .body-bg {
+        width: 40%;
+    }
+    .body-header {
+        width: 30%;
+    }
+    nav>ul li {
+        width: 40%;
+    }
+    nav>ul li a {
+        width: 40%;
+    }
+    .cards-frame {
+        width: 100%;
+    }
+    .card {
+        100%;
+    }
 }
 
-.champion-img {
-    width: 75px;
-    height: 75px;
-}
 
-.card-alias {
-    display: block;
-    padding: auto;
-    margin: 1%;
-    border: 3px solid aqua;
-}
+/* Responsive */
 
-.card-text {
-    width: 60%;
-    display: block;
-    padding: auto;
-    margin: 1%;
-    border: 3px solid olive; */
-
-
+@media only screen and (max-width:768px) {
+    .logo-welcome {
+        width: 50%;
+        height: 70%;
+    }
+    .body-header,
+    .menu,
+    ul,
+    span,
+    li {
+        max-width: 100%;
+        display: inline-block;
+    }
+    .container,
+    .welcome-content {
+        width: 80%;
+        height: auto;
+    }
+    .welcome-img,
+    #welcome-lol-img {
+        width: 250px;
+    }
 }

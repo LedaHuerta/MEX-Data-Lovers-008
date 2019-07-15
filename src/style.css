@@ -432,7 +432,7 @@ input[type=text]:focus {
     position: absolute;
     margin: 15px;
     transform-style: preserve-3d;
-    transition: all 0.5% ease;
+    transition: all 0.5s ease;
 }
 
 .card:hover {
@@ -469,6 +469,7 @@ input[type=text]:focus {
 .card-text {
     margin: 20px;
     padding: auto;
+    transform: rotateY(180deg)
 }
 
 .card-img {

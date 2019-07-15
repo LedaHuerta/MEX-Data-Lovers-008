@@ -329,7 +329,8 @@ nav>ul>li a:hover>span {
 }
 
 .select-roles,
-.select-ability {
+.select-ability,
+.select-alphabeth {
     text-decoration: none;
     background-color: #0A1616;
     color: #CD951A;

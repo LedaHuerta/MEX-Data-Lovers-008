@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('icomoon.eot?gy893u');
+    src: url('icomoon.eot?gy893u#iefix') format('embedded-opentype'), url('icomoon.ttf?gy893u') format('truetype'), url('icomoon.woff?gy893u') format('woff'), url('icomoon.svg?gy893u#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bookmark:before {
+    content: "\e900";
+}
+
+.icon-code:before {
+    content: "\e901";
+}
+
+.icon-explore:before {
+    content: "\e902";
+}
+
+.icon-home:before {
+    content: "\e903";
+}
+
+.icon-library:before {
+    content: "\e904";
+}
+
+.icon-news-paper:before {
+    content: "\e905";
+}
+
+.icon-plugin:before {
+    content: "\e906";
+}
+
+.icon-question:before {
+    content: "\e907";
+}
+
+.icon-search:before {
+    content: "\e908";
+}
+
+.icon-trophy:before {
+    content: "\e909";
+}
+
+.icon-bookmarks:before {
+    content: "\e90a";
+}
+
+.icon-code1:before {
+    content: "\e90b";
+}
+
+.icon-game-controller:before {
+    content: "\e90c";
+}
+
+.icon-star:before {
+    content: "\e90d";
+}

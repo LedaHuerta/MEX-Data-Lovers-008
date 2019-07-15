@@ -31,7 +31,7 @@ window.dataManager = {
             return 0;
         });
     },
-    averageByADamage: () => {
+    averageByADamage: (newData) => {
         let count = 0;
         let sumDamage = 0;
         let averageResult = 0;
@@ -43,12 +43,8 @@ window.dataManager = {
             // Declarar variable que acumule la suma de cada daño //
             sumDamage = sumDamage + currentAttackdamage;
             count++;
-        },
-        // Fórmula para calcular el promedio //
-        averageResult = sumDamage / count;
-        console.log('numero de Campeones:' + count);
-        console.log('suma total:' + sumDamage);
-        console.log('promedio:' + averageResult);
+            averageResult = sumDamage / count;
+        }
         return averageResult;
     }
 };

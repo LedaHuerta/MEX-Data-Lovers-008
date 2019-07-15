@@ -307,6 +307,48 @@ nav>ul>li a:hover>span {
 }
 
 
+/*
+estilo sección game-basics
+*/
+
+.content-basics h1 {
+    font-size: 33px;
+    color: #BFA004;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 1px #785C20;
+    word-spacing: 5px;
+}
+
+.resultFound {
+    font-size: 23px;
+    color: #CD951A;
+    text-align: justify;
+    background: #054A61;
+    margin: 10px;
+}
+
+.search-zone {
+    overflow: auto;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: #ccc;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+
 /* Estilos seccion Champions*/
 
 
@@ -330,7 +372,8 @@ nav>ul>li a:hover>span {
 
 .select-roles,
 .select-ability,
-.select-alphabeth {
+.select-alphabeth,
+#average {
     text-decoration: none;
     background-color: #0A1616;
     color: #CD951A;
@@ -369,6 +412,9 @@ nav>ul>li a:hover>span {
     padding: 50px;
     position: relative;
     margin: 10px auto;
+    color: #CD951A;
+    font-size: 15px;
+    text-align: center;
 }
 
 .cards-frame {

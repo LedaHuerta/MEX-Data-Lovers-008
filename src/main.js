@@ -15,6 +15,7 @@ const buttonNavChampions = document.getElementById('button-nav-champions');
 const selectRoles = document.getElementById('filter-roles');
 const selectAbility = document.getElementById('filter-ability');
 const selectAlphabeth = document.getElementById('order-alphabeth');
+const average = document.getElementById('average');
 
 
 //Variables para mostrar secciones//
@@ -154,7 +155,7 @@ selectAlphabeth.addEventListener('change', sortAlphabethic);
 // Función de buscador de coincidencias en la sección de game basics //
 const form = document.querySelector('#form');
 const buttonSearch = document.querySelector('#buttonSearch');
-const resultFound = document.querySelector('#resultFound')
+const resultFound = document.querySelector('#result-found')
 
 const find = () => {
     //console.log(fomulario.value);
@@ -185,7 +186,21 @@ form.addEventListener('keyup', find)
 find();
 
 // activa el boton average //
-average.addEventListener('click', window.dataManager.averageByADamage)
+// Fórmula para calcular el promedio //
+let averageDamage = (ev) => {
+    const average = window.dataManager.averageByADamage(newData);
+    statAverage = 'Promedio de Daño de Ataque: ' + average + '.';
+    root.innerHTML = statAverage;
+}
+average.addEventListener('click', averageDamage)
+
+
+// console.log('numero de Campeones:' + count);
+// console.log('suma total:' + sumDamage);
+// console.log('promedio:' + averageResult);
+
+
+
 
 
 // // let filterAbility = (ev) => {
